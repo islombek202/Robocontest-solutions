@@ -1,6 +1,5 @@
-n = int(input())
-sonlar = list(map(int, input().split()))
-yolgiz_son = 0
-for x in sonlar:
-    yolgiz_son = yolgiz_son ^ x
-print(yolgiz_son)
+N=int(input())
+nums=list(map(int,input().split()))
+no_duplicate_nums=set(nums)
+no_duplicate_num=sum(no_duplicate_nums) * 2-sum(nums)
+print(no_duplicate_num)
